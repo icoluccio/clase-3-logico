@@ -1,6 +1,6 @@
 sucedio(paris, atentado(fecha(13, 11, 2015), victimas(137, 350))).
 sucedio(paris, mundial(meses(6, 7), 2019, 24)).
-sucedio(buenosAires, mundial(meses(6, 7), 2019, 32)).
+sucedio(buenosAires, mundial(meses(6, 7), 1986, 32)).
 sucedio(paris, revolucion(1789, 1799)).
 sucedio(algunLado, revolucion(1777, 1777)).
 sucedio(buenosAires, fraseEstupida(politico(cristina, fpv), 2019)).
@@ -40,7 +40,7 @@ puedeAparecer(revolucion(AnioInicio, AnioFin)) :-
     AnioInicio < 1969,
     AnioFin > 2069.
 puedeAparecer(revolucion(anioInicio, 2019)).
-puedeAparecer(fraseEstupida(politico(_,Partido), Anio, Partido)) :-
+puedeAparecer(fraseEstupida(politico(_,Partido), Anio)) :-
     not(esOficialismo(Partido, Anio)).
 
 
